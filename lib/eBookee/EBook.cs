@@ -1,19 +1,27 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using eBookee.Core;
 
 namespace eBookee
 {
-    public class EBook
+    public interface IEBook
     {
-        public EBook(string ebookFile)
-        {
-            this.ContentSections = new List<ContentSection>();
-        }
-
-        public IEnumerable<ContentSection> ContentSections { get; set; }
-        public string Title { get; set; }
+        IEnumerable<ContentSection> ContentSections { get; set; }
+        string Title { get; set; }
     }
+
+    public class EBookFactory
+    {
+        public static IEBook ParseEBook(string eBookFileName)
+        {
+            var eBookFile = new EBookFile(eBookFileName);
+            if (eBookFile.EBookType == EBookType.EPub)
+            {
+                return new EPubBook(eBookFile);
+            }
+            throw new Exception("We can only handle epubs for now");
+
+        }
+    }
+
 }

@@ -1,4 +1,4 @@
-namespace eBookee
+namespace eBookee.Core
 {
     public class ContentSection
     {

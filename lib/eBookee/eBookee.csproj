@@ -39,7 +39,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ContentSection.cs" />
+    <Compile Include="Core\ContentSection.cs" />
+    <Compile Include="Core\EBookFile.cs" />
+    <Compile Include="Core\EBookType.cs" />
+    <Compile Include="Core\EPubBook.cs" />
     <Compile Include="EBook.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

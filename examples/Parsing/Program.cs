@@ -6,6 +6,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using eBookee;
+using eBookee.Core;
 
 namespace Parsing
 {
@@ -18,7 +19,7 @@ namespace Parsing
                 Console.WriteLine("usage: parsing EBOOK_FILENAME");
                 Environment.Exit(-1);
             }
-            var ebook = new EBook(args[0]);
+            var ebook = EBookFactory.ParseEBook(args[0]);
             Console.WriteLine("Ebook: {0}", ebook.Title);
             foreach (var contentSection in ebook.ContentSections)
             {
