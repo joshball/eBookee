@@ -21,13 +21,13 @@ namespace eBookee.Core
         {
             switch (extension.ToLower())
             {
-                case "epub":
+                case ".epub":
                     return EBookType.EPub;
-                case "txt":
+                case ".txt":
                     return EBookType.Text;
-                case "mobi":
+                case ".mobi":
                     return EBookType.Mobi;
-                case "pdf":
+                case ".pdf":
                     return EBookType.PDF;
                 default:
                     throw new Exception(string.Format("Unknown EBook Extension: {0}", extension));
