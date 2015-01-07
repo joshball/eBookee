@@ -9,8 +9,47 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{8B20B947-9
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "examples", "examples", "{18AE8B2F-7B74-413F-B8AA-025DEE6E9063}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "eBookee", "lib\eBookee\eBookee.csproj", "{40D9C213-1943-4D49-8212-EEF2C2C2F77A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "eBookee.Tests", "test\eBookee.Tests\eBookee.Tests.csproj", "{3DE6C798-27E5-4F34-A26C-291167602866}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "books", "books", "{D8D53D09-F359-47F5-BD0C-53D5352E8960}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "PG38233-Birds_Every_Child_Should_Know", "PG38233-Birds_Every_Child_Should_Know", "{1B0CD898-EEF7-4262-9BEA-ECC24464B50D}"
+	ProjectSection(SolutionItems) = preProject
+		books\PG38233-Birds_Every_Child_Should_Know\Birds Every Child Should Know.epub = books\PG38233-Birds_Every_Child_Should_Know\Birds Every Child Should Know.epub
+		books\PG38233-Birds_Every_Child_Should_Know\Birds Every Child Should Know.mobi = books\PG38233-Birds_Every_Child_Should_Know\Birds Every Child Should Know.mobi
+		books\PG38233-Birds_Every_Child_Should_Know\Birds Every Child Should Know.txt = books\PG38233-Birds_Every_Child_Should_Know\Birds Every Child Should Know.txt
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Parsing", "examples\Parsing\Parsing.csproj", "{170B9DF9-BA26-411F-9D27-3B9C751BBA10}"
+EndProject
 Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{40D9C213-1943-4D49-8212-EEF2C2C2F77A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{40D9C213-1943-4D49-8212-EEF2C2C2F77A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{40D9C213-1943-4D49-8212-EEF2C2C2F77A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{40D9C213-1943-4D49-8212-EEF2C2C2F77A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3DE6C798-27E5-4F34-A26C-291167602866}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3DE6C798-27E5-4F34-A26C-291167602866}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3DE6C798-27E5-4F34-A26C-291167602866}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3DE6C798-27E5-4F34-A26C-291167602866}.Release|Any CPU.Build.0 = Release|Any CPU
+		{170B9DF9-BA26-411F-9D27-3B9C751BBA10}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{170B9DF9-BA26-411F-9D27-3B9C751BBA10}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{170B9DF9-BA26-411F-9D27-3B9C751BBA10}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{170B9DF9-BA26-411F-9D27-3B9C751BBA10}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{40D9C213-1943-4D49-8212-EEF2C2C2F77A} = {B0BADDB4-4462-4A60-AF4D-227C162209C0}
+		{3DE6C798-27E5-4F34-A26C-291167602866} = {8B20B947-9A45-4C6C-A65A-490426F1DB5F}
+		{1B0CD898-EEF7-4262-9BEA-ECC24464B50D} = {D8D53D09-F359-47F5-BD0C-53D5352E8960}
+		{170B9DF9-BA26-411F-9D27-3B9C751BBA10} = {18AE8B2F-7B74-413F-B8AA-025DEE6E9063}
 	EndGlobalSection
 EndGlobal
